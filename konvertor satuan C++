@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     float nilai_awal, nilai_hasil;
-    char pilihan, satuan_panjang_awal, satuan_panjang_hasil, satuan_massa_awal, satuan_massa_hasil, satuan_suhu_awal, satuan_suhu_hasil, satuan_waktu_awal, satuan_waktu_hasil;   
+    char pilihan, satuan_awal, satuan_hasil;   
     cout<<"Apa yang ingin diubah?"<<endl;
     cout<<"a. Panjang \nb. Massa \nc. Suhu \nd. Waktu"<<endl;
     cin>>pilihan;
@@ -14,17 +14,17 @@ int main()
         {
             cout<<"Pilih satuan awal"<<endl;
             cout<<"a. kilometer (km) \nb. meter (m) \nc. centimeter (cm) \nd. inch (in) \ne. feet (ft) \nf. yard (yd) \ng. mil (mi)\n";
-            cin>>satuan_panjang_awal;
+            cin>>satuan_awal;
             cout<<"Masukkan panjang: ";
             cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. kilometer (km) \nb. meter (m) \nc. centimeter (cm) \nd. inch (in) \ne. feet (ft) \nf. yard (yd) \ng. mil (mi)\n";
-            cin>>satuan_panjang_hasil;
-            switch(satuan_panjang_awal)
+            cin>>satuan_hasil;
+            switch(satuan_awal)
             {
                 case 'a':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal;
                             cout<<nilai_awal<<" km = "<<nilai_hasil<<" km";break;}
@@ -51,7 +51,7 @@ int main()
                 }
                 case 'b':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*1000;
                             cout<<nilai_awal<<" m = "<<nilai_hasil<<" km";break;}
@@ -78,7 +78,7 @@ int main()
                 }
                 case 'c':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*100000;
                             cout<<nilai_awal<<" cm = "<<nilai_hasil<<" km";break;}
@@ -105,7 +105,7 @@ int main()
                 }
                 case 'd':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal/100000*2.54;
                             cout<<nilai_awal<<" in = "<<nilai_hasil<<" km";break;}
@@ -132,7 +132,7 @@ int main()
                 }
                 case 'e':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*30.48/10000;
                             cout<<nilai_awal<<" ft = "<<nilai_hasil<<" km";break;}
@@ -159,7 +159,7 @@ int main()
                 }
                 case 'f':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*2.54*36/100000;
                             cout<<nilai_awal<<" yd = "<<nilai_hasil<<" km";break;}
@@ -186,7 +186,7 @@ int main()
                 }
                 case 'g':
                 {
-                    switch(satuan_panjang_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*2.54*36/100000*1760;
                             cout<<nilai_awal<<" mi = "<<nilai_hasil<<" km";break;}
@@ -219,17 +219,17 @@ int main()
         {
             cout<<"Pilih satuan awal"<<endl;
             cout<<"a. kilogram (kg) \nb. gram (g) \nc. ton (t) \nd. pound (lb) \ne. ons\n";
-            cin>>satuan_massa_awal;
+            cin>>satuan_awal;
             cout<<"Masukkan massa: ";
             cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. kilogram (kg) \nb. gram (g) \nc. ton (t) \nd. pound (lb) \ne. ons\n";
-            cin>>satuan_massa_hasil;
-            switch(satuan_massa_awal)
+            cin>>satuan_hasil;
+            switch(satuan_awal)
             {
                 case 'a':
                 {
-                    switch(satuan_massa_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal;
                             cout<<nilai_awal<<" kg = "<<nilai_hasil<<" kg"; break;}
@@ -250,7 +250,7 @@ int main()
                 }
                 case 'b':
                 {
-                    switch(satuan_massa_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal/1000;
                             cout<<nilai_awal<<" g = "<<nilai_hasil<<" kg"; break;}
@@ -271,7 +271,7 @@ int main()
                 }
                 case 'c':
                 {
-                    switch(satuan_massa_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*1000;
                             cout<<nilai_awal<<" t = "<<nilai_hasil<<" kg"; break;}
@@ -292,7 +292,7 @@ int main()
                 }
                 case 'd':
                 {
-                    switch(satuan_massa_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal/2.20462;
                             cout<<nilai_awal<<" lb = "<<nilai_hasil<<" kg"; break;}
@@ -313,7 +313,7 @@ int main()
                 }
                 case 'e':
                 {
-                    switch(satuan_massa_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal/2.20462/16;
                             cout<<nilai_awal<<" ons = "<<nilai_hasil<<" kg"; break;}
@@ -340,17 +340,17 @@ int main()
         {
             cout<<"Pilih satuan awal"<<endl;
             cout<<"a. celcius (C) \nb. kelvin (K) \nc. fahrenheit (F) \nd. reamur (R)\n";
-            cin>>satuan_suhu_awal;
+            cin>>satuan_awal;
             cout<<"Masukkan suhu: ";
             cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. celcius (C) \nb. kelvin (K) \nc. fahrenheit (F) \nd. reamur (R)\n";
-            cin>>satuan_suhu_hasil;
-            switch(satuan_suhu_awal)
+            cin>>satuan_hasil;
+            switch(satuan_awal)
             {
                 case 'a':
                 {
-                    switch(satuan_suhu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal;
                             cout<<nilai_awal<<" C = "<<nilai_hasil<<" C"; break;}
@@ -368,7 +368,7 @@ int main()
                 }
                 case 'b':
                 {
-                    switch(satuan_suhu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal-273;
                             cout<<nilai_awal<<" K = "<<nilai_hasil<<" C"; break;}
@@ -386,7 +386,7 @@ int main()
                 }
                 case 'c':
                 {
-                    switch(satuan_suhu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = (nilai_awal-32)*5/9;
                             cout<<nilai_awal<<" F = "<<nilai_hasil<<" C"; break;}
@@ -404,7 +404,7 @@ int main()
                 }
                 case 'd':
                 {
-                    switch(satuan_suhu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*5/4;
                             cout<<nilai_awal<<" R = "<<nilai_hasil<<" C"; break;}
@@ -428,17 +428,17 @@ int main()
         {
             cout<<"Pilih satuan awal"<<endl;
             cout<<"a. detik \nb. menit \nc. jam \nd. hari\n";
-            cin>>satuan_waktu_awal;
+            cin>>satuan_awal;
             cout<<"Masukkan waktu: ";
             cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. detik \nb. menit \nc. jam \nd. hari\n";
-            cin>>satuan_waktu_hasil;
-            switch(satuan_waktu_awal)
+            cin>>satuan_hasil;
+            switch(satuan_awal)
             {
                 case 'a':
                 {
-                    switch(satuan_waktu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal;
                             cout<<nilai_awal<<" detik = "<<nilai_hasil<<" detik";break;}
@@ -456,7 +456,7 @@ int main()
                 }
                 case 'b':
                 {
-                    switch(satuan_waktu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*60;
                             cout<<nilai_awal<<" menit = "<<nilai_hasil<<" detik";break;}
@@ -474,7 +474,7 @@ int main()
                 }
                 case 'c':
                 {
-                    switch(satuan_waktu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*3600;
                             cout<<nilai_awal<<" jam = "<<nilai_hasil<<" detik";break;}
@@ -492,7 +492,7 @@ int main()
                 }
                 case 'd':
                 {
-                    switch(satuan_waktu_hasil){
+                    switch(satuan_hasil){
                         case 'a':{
                             nilai_hasil = nilai_awal*3600*24;
                             cout<<nilai_awal<<" hari = "<<nilai_hasil<<" detik";break;}
