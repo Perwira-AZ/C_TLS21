@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    float panjang, panjang_hasil, massa, massa_hasil, suhu, suhu_hasil, waktu, waktu_hasil;
+    float nilai_awal, nilai_hasil;
     char pilihan, satuan_panjang_awal, satuan_panjang_hasil, satuan_massa_awal, satuan_massa_hasil, satuan_suhu_awal, satuan_suhu_hasil, satuan_waktu_awal, satuan_waktu_hasil;   
     cout<<"Apa yang ingin diubah?"<<endl;
     cout<<"a. Panjang \nb. Massa \nc. Suhu \nd. Waktu"<<endl;
@@ -16,7 +16,7 @@ int main()
             cout<<"a. kilometer (km) \nb. meter (m) \nc. centimeter (cm) \nd. inch (in) \ne. feet (ft) \nf. yard (yd) \ng. mil (mi)\n";
             cin>>satuan_panjang_awal;
             cout<<"Masukkan panjang: ";
-            cin>>panjang;
+            cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. kilometer (km) \nb. meter (m) \nc. centimeter (cm) \nd. inch (in) \ne. feet (ft) \nf. yard (yd) \ng. mil (mi)\n";
             cin>>satuan_panjang_hasil;
@@ -26,26 +26,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang/1000;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal/1000;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang/100000;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal/100000;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang*39370.1;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal*39370.1;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang*3280.84;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal*3280.84;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang*1093.61;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal*1093.61;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang/1.609;
-                            cout<<panjang<<" km = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal/1.609;
+                            cout<<nilai_awal<<" km = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -53,26 +53,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang*1000;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal*1000;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang/100;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal/100;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang*39.3701;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal*39.3701;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang*3.28084;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal*3.28084;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang*1.09361;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal*1.09361;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang/1.609/1000;
-                            cout<<panjang<<" m = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal/1.609/1000;
+                            cout<<nilai_awal<<" m = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -80,26 +80,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang*100000;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal*100000;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang*100;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal*100;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang*39.3701/100;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal*39.3701/100;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang*3.28084/100;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal*3.28084/100;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang*1.09361/100;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal*1.09361/100;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang/1.069/100000;
-                            cout<<panjang<<" cm = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal/1.069/100000;
+                            cout<<nilai_awal<<" cm = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -107,26 +107,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang/100000*2.54;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal/100000*2.54;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang/100*2.54;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal/100*2.54;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang*2.54;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal*2.54;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang/12;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal/12;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang/36;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal/36;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang/63360;
-                            cout<<panjang<<" in = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal/63360;
+                            cout<<nilai_awal<<" in = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -134,26 +134,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang*30.48/10000;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal*30.48/10000;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang*30.48/100;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal*30.48/100;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang*30.48;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal*30.48;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang*12;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal*12;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang/3;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal/3;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang/5280;
-                            cout<<panjang<<" ft = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal/5280;
+                            cout<<nilai_awal<<" ft = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -161,26 +161,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang*2.54*36/100000;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal*2.54*36/100000;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang*2.54*36/100;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal*2.54*36/100;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang*2.54*36;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal*2.54*36;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang*36;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal*36;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang*3;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal*3;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang/1760;
-                            cout<<panjang<<" yd = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal/1760;
+                            cout<<nilai_awal<<" yd = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -188,26 +188,26 @@ int main()
                 {
                     switch(satuan_panjang_hasil){
                         case 'a':{
-                            panjang_hasil = panjang*2.54*36/100000*1760;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" km";break;}
+                            nilai_hasil = nilai_awal*2.54*36/100000*1760;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" km";break;}
                         case 'b':{
-                            panjang_hasil = panjang*2.54*36/100*1760;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" m";break;}
+                            nilai_hasil = nilai_awal*2.54*36/100*1760;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" m";break;}
                         case 'c':{
-                            panjang_hasil = panjang*2.54*36*1760;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" cm";break;}
+                            nilai_hasil = nilai_awal*2.54*36*1760;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" cm";break;}
                         case 'd':{
-                            panjang_hasil = panjang*36*1760;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" in";break;}
+                            nilai_hasil = nilai_awal*36*1760;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" in";break;}
                         case 'e':{
-                            panjang_hasil = panjang*3*1760;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" ft";break;}
+                            nilai_hasil = nilai_awal*3*1760;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" ft";break;}
                         case 'f':{
-                            panjang_hasil = panjang*1760;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" yd";break;}
+                            nilai_hasil = nilai_awal*1760;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" yd";break;}
                         case 'g':{
-                            panjang_hasil = panjang;
-                            cout<<panjang<<" mi = "<<panjang_hasil<<" mi";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" mi = "<<nilai_hasil<<" mi";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -221,7 +221,7 @@ int main()
             cout<<"a. kilogram (kg) \nb. gram (g) \nc. ton (t) \nd. pound (lb) \ne. ons\n";
             cin>>satuan_massa_awal;
             cout<<"Masukkan massa: ";
-            cin>>massa;
+            cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. kilogram (kg) \nb. gram (g) \nc. ton (t) \nd. pound (lb) \ne. ons\n";
             cin>>satuan_massa_hasil;
@@ -231,20 +231,20 @@ int main()
                 {
                     switch(satuan_massa_hasil){
                         case 'a':{
-                            massa_hasil = massa;
-                            cout<<massa<<" kg = "<<massa_hasil<<" kg"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" kg = "<<nilai_hasil<<" kg"; break;}
                         case 'b':{
-                            massa_hasil = massa*1000;
-                            cout<<massa<<" kg = "<<massa_hasil<<" g"; break;}
+                            nilai_hasil = nilai_awal*1000;
+                            cout<<nilai_awal<<" kg = "<<nilai_hasil<<" g"; break;}
                         case 'c':{
-                            massa_hasil = massa/1000;
-                            cout<<massa<<" kg = "<<massa_hasil<<" t"; break;}
+                            nilai_hasil = nilai_awal/1000;
+                            cout<<nilai_awal<<" kg = "<<nilai_hasil<<" t"; break;}
                         case 'd':{
-                            massa_hasil = massa*2.20462;
-                            cout<<massa<<" kg = "<<massa_hasil<<" lb"; break;}
+                            nilai_hasil = nilai_awal*2.20462;
+                            cout<<nilai_awal<<" kg = "<<nilai_hasil<<" lb"; break;}
                         case 'e':{
-                            massa_hasil = massa*35.274;
-                            cout<<massa<<" kg = "<<massa_hasil<<" ons"; break;}
+                            nilai_hasil = nilai_awal*35.274;
+                            cout<<nilai_awal<<" kg = "<<nilai_hasil<<" ons"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -252,20 +252,20 @@ int main()
                 {
                     switch(satuan_massa_hasil){
                         case 'a':{
-                            massa_hasil = massa/1000;
-                            cout<<massa<<" g = "<<massa_hasil<<" kg"; break;}
+                            nilai_hasil = nilai_awal/1000;
+                            cout<<nilai_awal<<" g = "<<nilai_hasil<<" kg"; break;}
                         case 'b':{
-                            massa_hasil = massa;
-                            cout<<massa<<" g = "<<massa_hasil<<" g"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" g = "<<nilai_hasil<<" g"; break;}
                         case 'c':{
-                            massa_hasil = massa/1000000;
-                            cout<<massa<<" g = "<<massa_hasil<<" t"; break;}
+                            nilai_hasil = nilai_awal/1000000;
+                            cout<<nilai_awal<<" g = "<<nilai_hasil<<" t"; break;}
                         case 'd':{
-                            massa_hasil = massa*2.20462/1000;
-                            cout<<massa<<" g = "<<massa_hasil<<" lb"; break;}
+                            nilai_hasil = nilai_awal*2.20462/1000;
+                            cout<<nilai_awal<<" g = "<<nilai_hasil<<" lb"; break;}
                         case 'e':{
-                            massa_hasil = massa*35.274/1000;
-                            cout<<massa<<" g = "<<massa_hasil<<" ons"; break;}
+                            nilai_hasil = nilai_awal*35.274/1000;
+                            cout<<nilai_awal<<" g = "<<nilai_hasil<<" ons"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -273,20 +273,20 @@ int main()
                 {
                     switch(satuan_massa_hasil){
                         case 'a':{
-                            massa_hasil = massa*1000;
-                            cout<<massa<<" t = "<<massa_hasil<<" kg"; break;}
+                            nilai_hasil = nilai_awal*1000;
+                            cout<<nilai_awal<<" t = "<<nilai_hasil<<" kg"; break;}
                         case 'b':{
-                            massa_hasil = massa*1000000;
-                            cout<<massa<<" t = "<<massa_hasil<<" g"; break;}
+                            nilai_hasil = nilai_awal*1000000;
+                            cout<<nilai_awal<<" t = "<<nilai_hasil<<" g"; break;}
                         case 'c':{
-                            massa_hasil = massa;
-                            cout<<massa<<" t = "<<massa_hasil<<" t"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" t = "<<nilai_hasil<<" t"; break;}
                         case 'd':{
-                            massa_hasil = massa*2.20462*1000;
-                            cout<<massa<<" t = "<<massa_hasil<<" lb"; break;}
+                            nilai_hasil = nilai_awal*2.20462*1000;
+                            cout<<nilai_awal<<" t = "<<nilai_hasil<<" lb"; break;}
                         case 'e':{
-                            massa_hasil = massa*35.274*1000;
-                            cout<<massa<<" t = "<<massa_hasil<<" ons"; break;}
+                            nilai_hasil = nilai_awal*35.274*1000;
+                            cout<<nilai_awal<<" t = "<<nilai_hasil<<" ons"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -294,20 +294,20 @@ int main()
                 {
                     switch(satuan_massa_hasil){
                         case 'a':{
-                            massa_hasil = massa/2.20462;
-                            cout<<massa<<" lb = "<<massa_hasil<<" kg"; break;}
+                            nilai_hasil = nilai_awal/2.20462;
+                            cout<<nilai_awal<<" lb = "<<nilai_hasil<<" kg"; break;}
                         case 'b':{
-                            massa_hasil = massa/0.00220462;
-                            cout<<massa<<" lb = "<<massa_hasil<<" g"; break;}
+                            nilai_hasil = nilai_awal/0.00220462;
+                            cout<<nilai_awal<<" lb = "<<nilai_hasil<<" g"; break;}
                         case 'c':{
-                            massa_hasil = massa/2204,62;
-                            cout<<massa<<" lb = "<<massa_hasil<<" t"; break;}
+                            nilai_hasil = nilai_awal/2204,62;
+                            cout<<nilai_awal<<" lb = "<<nilai_hasil<<" t"; break;}
                         case 'd':{
-                            massa_hasil = massa;
-                            cout<<massa<<" lb = "<<massa_hasil<<" lb"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" lb = "<<nilai_hasil<<" lb"; break;}
                         case 'e':{
-                            massa_hasil = massa*16;
-                            cout<<massa<<" lb = "<<massa_hasil<<" ons"; break;}
+                            nilai_hasil = nilai_awal*16;
+                            cout<<nilai_awal<<" lb = "<<nilai_hasil<<" ons"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -315,20 +315,20 @@ int main()
                 {
                     switch(satuan_massa_hasil){
                         case 'a':{
-                            massa_hasil = massa/2.20462/16;
-                            cout<<massa<<" ons = "<<massa_hasil<<" kg"; break;}
+                            nilai_hasil = nilai_awal/2.20462/16;
+                            cout<<nilai_awal<<" ons = "<<nilai_hasil<<" kg"; break;}
                         case 'b':{
-                            massa_hasil = massa/0.00220462/16;
-                            cout<<massa<<" ons = "<<massa_hasil<<" g"; break;}
+                            nilai_hasil = nilai_awal/0.00220462/16;
+                            cout<<nilai_awal<<" ons = "<<nilai_hasil<<" g"; break;}
                         case 'c':{
-                            massa_hasil = massa/2204,62/16;
-                            cout<<massa<<" ons = "<<massa_hasil<<" t"; break;}
+                            nilai_hasil = nilai_awal/2204,62/16;
+                            cout<<nilai_awal<<" ons = "<<nilai_hasil<<" t"; break;}
                         case 'd':{
-                            massa_hasil = massa/16;
-                            cout<<massa<<" ons = "<<massa_hasil<<" lb"; break;}
+                            nilai_hasil = nilai_awal/16;
+                            cout<<nilai_awal<<" ons = "<<nilai_hasil<<" lb"; break;}
                         case 'e':{
-                            massa_hasil = massa;
-                            cout<<massa<<" ons = "<<massa_hasil<<" ons"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" ons = "<<nilai_hasil<<" ons"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -342,7 +342,7 @@ int main()
             cout<<"a. celcius (C) \nb. kelvin (K) \nc. fahrenheit (F) \nd. reamur (R)\n";
             cin>>satuan_suhu_awal;
             cout<<"Masukkan suhu: ";
-            cin>>suhu;
+            cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. celcius (C) \nb. kelvin (K) \nc. fahrenheit (F) \nd. reamur (R)\n";
             cin>>satuan_suhu_hasil;
@@ -352,17 +352,17 @@ int main()
                 {
                     switch(satuan_suhu_hasil){
                         case 'a':{
-                            suhu_hasil = suhu;
-                            cout<<suhu<<" C = "<<suhu_hasil<<" C"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" C = "<<nilai_hasil<<" C"; break;}
                         case 'b':{
-                            suhu_hasil = suhu+273;
-                            cout<<suhu<<" C = "<<suhu_hasil<<" K"; break;}
+                            nilai_hasil = nilai_awal+273;
+                            cout<<nilai_awal<<" C = "<<nilai_hasil<<" K"; break;}
                         case 'c':{
-                            suhu_hasil = suhu*9/5+32;
-                            cout<<suhu<<" C = "<<suhu_hasil<<" F"; break;}
+                            nilai_hasil = nilai_awal*9/5+32;
+                            cout<<nilai_awal<<" C = "<<nilai_hasil<<" F"; break;}
                         case 'd':{
-                            suhu_hasil = suhu*4/5;
-                            cout<<suhu<<" C = "<<suhu_hasil<<" R"; break;}
+                            nilai_hasil = nilai_awal*4/5;
+                            cout<<nilai_awal<<" C = "<<nilai_hasil<<" R"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -370,17 +370,17 @@ int main()
                 {
                     switch(satuan_suhu_hasil){
                         case 'a':{
-                            suhu_hasil = suhu-273;
-                            cout<<suhu<<" K = "<<suhu_hasil<<" C"; break;}
+                            nilai_hasil = nilai_awal-273;
+                            cout<<nilai_awal<<" K = "<<nilai_hasil<<" C"; break;}
                         case 'b':{
-                            suhu_hasil = suhu;
-                            cout<<suhu<<" K = "<<suhu_hasil<<" K"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" K = "<<nilai_hasil<<" K"; break;}
                         case 'c':{
-                            suhu_hasil = (suhu-273)*9/5+32;
-                            cout<<suhu<<" K = "<<suhu_hasil<<" F"; break;}
+                            nilai_hasil = (nilai_awal-273)*9/5+32;
+                            cout<<nilai_awal<<" K = "<<nilai_hasil<<" F"; break;}
                         case 'd':{
-                            suhu_hasil = (suhu-273)*4/5;
-                            cout<<suhu<<" K = "<<suhu_hasil<<" R"; break;}
+                            nilai_hasil = (nilai_awal-273)*4/5;
+                            cout<<nilai_awal<<" K = "<<nilai_hasil<<" R"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -388,17 +388,17 @@ int main()
                 {
                     switch(satuan_suhu_hasil){
                         case 'a':{
-                            suhu_hasil = (suhu-32)*5/9;
-                            cout<<suhu<<" F = "<<suhu_hasil<<" C"; break;}
+                            nilai_hasil = (nilai_awal-32)*5/9;
+                            cout<<nilai_awal<<" F = "<<nilai_hasil<<" C"; break;}
                         case 'b':{
-                            suhu_hasil = (suhu-32)*5/9+273;
-                            cout<<suhu<<" F = "<<suhu_hasil<<" K"; break;}
+                            nilai_hasil = (nilai_awal-32)*5/9+273;
+                            cout<<nilai_awal<<" F = "<<nilai_hasil<<" K"; break;}
                         case 'c':{
-                            suhu_hasil = suhu;
-                            cout<<suhu<<" F = "<<suhu_hasil<<" K"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" F = "<<nilai_hasil<<" K"; break;}
                         case 'd':{
-                            suhu_hasil = (suhu-32)*4/9;
-                            cout<<suhu<<" F = "<<suhu_hasil<<" R"; break;}
+                            nilai_hasil = (nilai_awal-32)*4/9;
+                            cout<<nilai_awal<<" F = "<<nilai_hasil<<" R"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -406,17 +406,17 @@ int main()
                 {
                     switch(satuan_suhu_hasil){
                         case 'a':{
-                            suhu_hasil = suhu*5/4;
-                            cout<<suhu<<" R = "<<suhu_hasil<<" C"; break;}
+                            nilai_hasil = nilai_awal*5/4;
+                            cout<<nilai_awal<<" R = "<<nilai_hasil<<" C"; break;}
                         case 'b':{
-                            suhu_hasil = suhu*5/4+273;
-                            cout<<suhu<<" R = "<<suhu_hasil<<" K"; break;}
+                            nilai_hasil = nilai_awal*5/4+273;
+                            cout<<nilai_awal<<" R = "<<nilai_hasil<<" K"; break;}
                         case 'c':{
-                            suhu_hasil = suhu*9/4+32;
-                            cout<<suhu<<" R = "<<suhu_hasil<<" F"; break;}
+                            nilai_hasil = nilai_awal*9/4+32;
+                            cout<<nilai_awal<<" R = "<<nilai_hasil<<" F"; break;}
                         case 'd':{
-                            suhu_hasil = suhu;
-                            cout<<suhu<<" R = "<<suhu_hasil<<" R"; break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" R = "<<nilai_hasil<<" R"; break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -430,7 +430,7 @@ int main()
             cout<<"a. detik \nb. menit \nc. jam \nd. hari\n";
             cin>>satuan_waktu_awal;
             cout<<"Masukkan waktu: ";
-            cin>>waktu;
+            cin>>nilai_awal;
             cout<<"Pilih satuan hasil"<<endl;
             cout<<"a. detik \nb. menit \nc. jam \nd. hari\n";
             cin>>satuan_waktu_hasil;
@@ -440,17 +440,17 @@ int main()
                 {
                     switch(satuan_waktu_hasil){
                         case 'a':{
-                            waktu_hasil = waktu;
-                            cout<<waktu<<" detik = "<<waktu_hasil<<" detik";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" detik = "<<nilai_hasil<<" detik";break;}
                         case 'b':{
-                            waktu_hasil = waktu/60;
-                            cout<<waktu<<" detik = "<<waktu_hasil<<" menit";break;}
+                            nilai_hasil = nilai_awal/60;
+                            cout<<nilai_awal<<" detik = "<<nilai_hasil<<" menit";break;}
                         case 'c':{
-                            waktu_hasil = waktu/3600;
-                            cout<<waktu<<" detik = "<<waktu_hasil<<" jam";break;}
+                            nilai_hasil = nilai_awal/3600;
+                            cout<<nilai_awal<<" detik = "<<nilai_hasil<<" jam";break;}
                         case 'd':{
-                            waktu_hasil = waktu/3600/24;
-                            cout<<waktu<<" detik = "<<waktu_hasil<<" hari";break;}
+                            nilai_hasil = nilai_awal/3600/24;
+                            cout<<nilai_awal<<" detik = "<<nilai_hasil<<" hari";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -458,17 +458,17 @@ int main()
                 {
                     switch(satuan_waktu_hasil){
                         case 'a':{
-                            waktu_hasil = waktu*60;
-                            cout<<waktu<<" menit = "<<waktu_hasil<<" detik";break;}
+                            nilai_hasil = nilai_awal*60;
+                            cout<<nilai_awal<<" menit = "<<nilai_hasil<<" detik";break;}
                         case 'b':{
-                            waktu_hasil = waktu;
-                            cout<<waktu<<" menit = "<<waktu_hasil<<" menit";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" menit = "<<nilai_hasil<<" menit";break;}
                         case 'c':{
-                            waktu_hasil = waktu/60;
-                            cout<<waktu<<" menit = "<<waktu_hasil<<" jam";break;}
+                            nilai_hasil = nilai_awal/60;
+                            cout<<nilai_awal<<" menit = "<<nilai_hasil<<" jam";break;}
                         case 'd':{
-                            waktu_hasil = waktu/60/24;
-                            cout<<waktu<<" menit = "<<waktu_hasil<<" hari";break;}
+                            nilai_hasil = nilai_awal/60/24;
+                            cout<<nilai_awal<<" menit = "<<nilai_hasil<<" hari";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -476,17 +476,17 @@ int main()
                 {
                     switch(satuan_waktu_hasil){
                         case 'a':{
-                            waktu_hasil = waktu*3600;
-                            cout<<waktu<<" jam = "<<waktu_hasil<<" detik";break;}
+                            nilai_hasil = nilai_awal*3600;
+                            cout<<nilai_awal<<" jam = "<<nilai_hasil<<" detik";break;}
                         case 'b':{
-                            waktu_hasil = waktu*60;
-                            cout<<waktu<<" jam = "<<waktu_hasil<<" menit";break;}
+                            nilai_hasil = nilai_awal*60;
+                            cout<<nilai_awal<<" jam = "<<nilai_hasil<<" menit";break;}
                         case 'c':{
-                            waktu_hasil = waktu;
-                            cout<<waktu<<" jam = "<<waktu_hasil<<" jam";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" jam = "<<nilai_hasil<<" jam";break;}
                         case 'd':{
-                            waktu_hasil = waktu/24;
-                            cout<<waktu<<" jam = "<<waktu_hasil<<" hari";break;}
+                            nilai_hasil = nilai_awal/24;
+                            cout<<nilai_awal<<" jam = "<<nilai_hasil<<" hari";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
@@ -494,17 +494,17 @@ int main()
                 {
                     switch(satuan_waktu_hasil){
                         case 'a':{
-                            waktu_hasil = waktu*3600*24;
-                            cout<<waktu<<" hari = "<<waktu_hasil<<" detik";break;}
+                            nilai_hasil = nilai_awal*3600*24;
+                            cout<<nilai_awal<<" hari = "<<nilai_hasil<<" detik";break;}
                         case 'b':{
-                            waktu_hasil = waktu*60*24;
-                            cout<<waktu<<" hari = "<<waktu_hasil<<" menit";break;}
+                            nilai_hasil = nilai_awal*60*24;
+                            cout<<nilai_awal<<" hari = "<<nilai_hasil<<" menit";break;}
                         case 'c':{
-                            waktu_hasil = waktu*24;
-                            cout<<waktu<<" hari = "<<waktu_hasil<<" jam";break;}
+                            nilai_hasil = nilai_awal*24;
+                            cout<<nilai_awal<<" hari = "<<nilai_hasil<<" jam";break;}
                         case 'd':{
-                            waktu_hasil = waktu;
-                            cout<<waktu<<" hari = "<<waktu_hasil<<" hari";break;}
+                            nilai_hasil = nilai_awal;
+                            cout<<nilai_awal<<" hari = "<<nilai_hasil<<" hari";break;}
                         default:
                             cout<<"terjadi kesalahan pemilihan";break;}break;
                 }
